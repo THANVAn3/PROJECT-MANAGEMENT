@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Dashboard</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f5f7fa;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 230px;
+        background: #1f2d3d;
+        padding: 25px;
+        color: white;
+    }
+
+    .sidebar h2 {
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        padding: 15px 0;
+        color: #c5ccd6;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .sidebar ul li:hover {
+        color: #ffffff;
+    }
+
+    /* Main UI */
+    .main {
+        flex: 1;
+        padding: 35px 45px;
+        background: #f7f9fc;
+        overflow-y: auto;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .main-header h1 {
+        font-size: 26px;
+        color: #333;
+    }
+
+    .add-btn {
+        background: #41b556;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .add-btn:hover {
+        background: #38a24b;
+    }
+
+    /* Project Cards */
+    .card {
+        background: #ffffff;
+        padding: 20px 25px;
+        border-radius: 10px;
+        border: 1px solid #e1e5ea;
+        margin-bottom: 25px;
+    }
+
+    .card h2 {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: #222;
+    }
+
+    .card p {
+        margin-bottom: 8px;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .delete-btn {
+        background: #e64a3b;
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .delete-btn:hover {
+        background: #cc3f33;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Project Manager</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Projects</li>
+            <li>Tasks</li>
+            <li>Team</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="main-header">
+            <h1>Project Dashboard</h1>
+            <button class="add-btn">+ Add Project</button>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>ResQnet</h2>
+            <p>ocean hazard alert system</p>
+            <p><strong>Deadline:</strong> 2025-11-13</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>farm assist</h2>
+            <p>AI agriculture system</p>
+            <p><strong>Deadline:</strong> 2025-06-16</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
